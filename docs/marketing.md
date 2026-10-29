@@ -15,8 +15,8 @@ What's inside:
 
 Built with React, Vite and Tailwind CSS v4. All content lives in simple data files, so a studio owner can update classes and prices without touching the code.
 
-Live demo: [your link]
-Code: [your GitHub link]
+Live demo: https://forge-studio-demo.netlify.app/
+Code: https://github.com/Shiv-96/forge-studio
 
 If you run a gym or studio and want something like this, my DMs are open.
 
@@ -32,7 +32,7 @@ If you run a gym or studio and want something like this, my DMs are open.
 
 Your website should turn visitors into members. I build fast, mobile-first websites for gyms, yoga studios and fitness coaches that make one thing easy: booking a trial.
 
-**See a live example:** [your demo link]
+**See a live example:** https://forge-studio-demo.netlify.app/
 
 **What you get**
 
@@ -75,8 +75,8 @@ Your website should turn visitors into members. I build fast, mobile-first websi
 
 ## Pre-share checklist
 
-- [ ] Site deployed on Netlify and the live URL opens on a phone
-- [ ] Replaced `forge-studio-pune.netlify.app` with the real URL in `index.html`, `robots.txt`, `sitemap.xml` and `site.js`
+- [x] Site deployed on Netlify
+- [x] Live URL (`forge-studio-demo.netlify.app`) set in `index.html`, `robots.txt`, `sitemap.xml` and `site.js`
 - [ ] Submitted a test trial form and saw it under **Forms → free-trial**
 - [ ] Deleted the test submission
 - [ ] Checked the layout at 360, 768, 1024 and 1440 px (browser dev tools)

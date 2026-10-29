@@ -2,7 +2,7 @@
 <!-- sitemap.xml — single-page site, so one URL. Update <loc> if the domain changes. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://forge-studio-pune.netlify.app/</loc>
+    <loc>https://forge-studio-demo.netlify.app/</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

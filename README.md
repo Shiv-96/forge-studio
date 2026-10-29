@@ -4,7 +4,7 @@
 
 A fast, accessible, single-page website for a modern fitness studio offering strength training, HIIT, yoga and Zumba. It is built to turn mobile visitors into **free-trial signups**, with calling or visiting the studio as the secondary goal.
 
-**Live demo:** `https://forge-studio-pune.netlify.app` *(replace with your deploy URL)*
+**Live demo:** [forge-studio-demo.netlify.app](https://forge-studio-demo.netlify.app/)
 
 ![Desktop screenshot](docs/screenshot-desktop.png)
 ![Mobile screenshot](docs/screenshot-mobile.png)
@@ -93,7 +93,7 @@ npm run preview    # serve the production build locally
 5. Open the live site, submit the free-trial form, then check **Forms → free-trial** in the dashboard for the entry.
 6. Optional: under **Forms → Form notifications**, add an email notification for new submissions.
 
-After you know your final URL, replace `https://forge-studio-pune.netlify.app` in `index.html`, `public/robots.txt`, `public/sitemap.xml` and `src/data/site.js`.
+After you know your final URL, replace `https://forge-studio-demo.netlify.app` in `index.html`, `public/robots.txt`, `public/sitemap.xml` and `src/data/site.js`.
 
 ## Customization guide
 

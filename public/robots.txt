@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://forge-studio-pune.netlify.app/sitemap.xml
+Sitemap: https://forge-studio-demo.netlify.app/sitemap.xml

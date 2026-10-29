@@ -9,7 +9,7 @@ export const site = {
   name: 'FORGE Studio',
   shortName: 'FORGE',
   tagline: 'Stronger, one session at a time.',
-  url: 'https://forge-studio-pune.netlify.app',
+  url: 'https://forge-studio-demo.netlify.app',
 
   // Fictional contact details for the sample. Replace before using for a real business.
   phoneDisplay: '+91 20 4000 1234',
