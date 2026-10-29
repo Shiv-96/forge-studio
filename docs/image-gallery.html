@@ -1,0 +1,165 @@
+<!doctype html>
+<!-- image-gallery.html — preview of every FORGE Studio photo (on the site + alternates). Open in any browser. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FORGE Studio photos</title>
+<style>
+:root{--bg:#0e0f11;--card:#16181b;--line:#33373d;--text:#eceef0;--muted:#a0a5ad;--volt:#c6f432}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:32px 16px}
+main{max-width:1200px;margin:auto}h1{font:800 40px/1 Impact,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.02em;margin:0}
+h1 span{color:var(--volt)}h2{margin:40px 0 16px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--volt)}
+.intro{color:var(--muted);max-width:720px}.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{margin:0;background:var(--card);border:1px solid var(--line);overflow:hidden}
+.card img{display:block;width:100%;height:200px;object-fit:cover;background:repeating-linear-gradient(-45deg,#16181b 0 14px,#24272c 14px 15px)}
+figcaption{padding:14px 16px 16px}h3{margin:8px 0 2px;font-size:16px}p{margin:0;color:var(--muted);font-size:13px}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;align-items:center}.links a{color:var(--volt)}
+code{color:var(--text);background:#1f2226;padding:2px 6px;font-size:12px}
+.badge{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:2px 8px;background:#1f2226;color:var(--muted)}
+.badge.used{background:var(--volt);color:#0e0f11}
+</style></head><body><main>
+<h1>FORGE <span>Studio</span> photos</h1>
+<p class="intro">Every photo used on the site, plus alternates you can swap in. All are free to use under the
+<a href="https://www.pexels.com/license/" style="color:var(--volt)">Pexels License</a> (credit appreciated, not required).
+Click a photo for full size. To download them all into <code>public/images/</code>, run <code>.\scripts\download-images.ps1</code> (add <code>-All</code> for the alternates).</p>
+<h2>On the site (11)</h2><div class="grid">
+<figure class="card">
+  <a href="https://images.pexels.com/photos/2105493/pexels-photo-2105493.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/2105493/pexels-photo-2105493.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hero background" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Hero background</h3>
+  <p>Photo by Kuldeep Singhania · Pexels #2105493</p>
+  <p class="links"><a href="https://www.pexels.com/photo/man-holding-black-dumbbells-2105493/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/2105493/pexels-photo-2105493.jpeg" target="_blank" rel="noopener">Full size</a><code>hero.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/7444444/pexels-photo-7444444.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/7444444/pexels-photo-7444444.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Why us (coaching)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Why us (coaching)</h3>
+  <p>Photo by Saulo Leite · Pexels #7444444</p>
+  <p class="links"><a href="https://www.pexels.com/photo/back-view-of-a-man-7444444/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/7444444/pexels-photo-7444444.jpeg" target="_blank" rel="noopener">Full size</a><code>why-us.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/5755261/pexels-photo-5755261.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/5755261/pexels-photo-5755261.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Class: Strength" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Class: Strength</h3>
+  <p>Photo by Bhavesh Mahida · Pexels #5755261</p>
+  <p class="links"><a href="https://www.pexels.com/photo/man-in-blue-workout-tank-top-carrying-black-dumbbells-5755261/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/5755261/pexels-photo-5755261.jpeg" target="_blank" rel="noopener">Full size</a><code>class-strength.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/6455771/pexels-photo-6455771.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/6455771/pexels-photo-6455771.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Class: HIIT" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Class: HIIT</h3>
+  <p>Photo by Julia Larson · Pexels #6455771</p>
+  <p class="links"><a href="https://www.pexels.com/photo/ethnic-woman-exercising-with-battling-ropes-near-male-trainer-6455771/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/6455771/pexels-photo-6455771.jpeg" target="_blank" rel="noopener">Full size</a><code>class-hiit.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/3822668/pexels-photo-3822668.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/3822668/pexels-photo-3822668.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Class: Yoga" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Class: Yoga</h3>
+  <p>Photo by Elly Fairytale · Pexels #3822668</p>
+  <p class="links"><a href="https://www.pexels.com/photo/women-doing-yoga-3822668/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/3822668/pexels-photo-3822668.jpeg" target="_blank" rel="noopener">Full size</a><code>class-yoga.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/8957646/pexels-photo-8957646.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/8957646/pexels-photo-8957646.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Class: Zumba" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Class: Zumba</h3>
+  <p>Photo by Kampus Production · Pexels #8957646</p>
+  <p class="links"><a href="https://www.pexels.com/photo/8957646/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/8957646/pexels-photo-8957646.jpeg" target="_blank" rel="noopener">Full size</a><code>class-zumba.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/31918891/pexels-photo-31918891.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/31918891/pexels-photo-31918891.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Trainer: Arjun (strength)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Trainer: Arjun (strength)</h3>
+  <p>Photo by Foad Shariyati · Pexels #31918891</p>
+  <p class="links"><a href="https://www.pexels.com/photo/confident-man-standing-in-gym-with-crossed-arms-31918891/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/31918891/pexels-photo-31918891.jpeg" target="_blank" rel="noopener">Full size</a><code>trainer-arjun.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/4498516/pexels-photo-4498516.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/4498516/pexels-photo-4498516.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Trainer: Priya (yoga)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Trainer: Priya (yoga)</h3>
+  <p>Photo by Karola G · Pexels #4498516</p>
+  <p class="links"><a href="https://www.pexels.com/photo/slim-sportswoman-with-folded-yoga-mat-at-home-4498516/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/4498516/pexels-photo-4498516.jpeg" target="_blank" rel="noopener">Full size</a><code>trainer-priya.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Trainer: Rohan (HIIT)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Trainer: Rohan (HIIT)</h3>
+  <p>Photo by assomyron · Pexels #32695885</p>
+  <p class="links"><a href="https://www.pexels.com/photo/fitness-coach-in-gym-setting-showing-confidence-32695885/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg" target="_blank" rel="noopener">Full size</a><code>trainer-rohan.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/6739931/pexels-photo-6739931.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/6739931/pexels-photo-6739931.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Trainer: Sneha (Zumba)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Trainer: Sneha (Zumba)</h3>
+  <p>Photo by Mikhail Nilov · Pexels #6739931</p>
+  <p class="links"><a href="https://www.pexels.com/photo/woman-wearing-gray-hoodie-and-black-leggings-6739931/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/6739931/pexels-photo-6739931.jpeg" target="_blank" rel="noopener">Full size</a><code>trainer-sneha.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/6339358/pexels-photo-6339358.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/6339358/pexels-photo-6339358.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Free-trial background" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge used">On the site</span><h3>Free-trial background</h3>
+  <p>Photo by Pavel Danilyuk · Pexels #6339358</p>
+  <p class="links"><a href="https://www.pexels.com/photo/group-of-people-exercising-together-6339358/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/6339358/pexels-photo-6339358.jpeg" target="_blank" rel="noopener">Full size</a><code>trial.jpg</code></p></figcaption>
+</figure>
+</div>
+<h2>Alternates (12)</h2><div class="grid">
+<figure class="card">
+  <a href="https://images.pexels.com/photos/31918834/pexels-photo-31918834.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/31918834/pexels-photo-31918834.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt hero / strength" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt hero / strength</h3>
+  <p>Photo by Foad Shariyati · Pexels #31918834</p>
+  <p class="links"><a href="https://www.pexels.com/photo/man-lifting-dumbbells-in-modern-gym-setting-31918834/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/31918834/pexels-photo-31918834.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-strength-red-tank.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/15216133/pexels-photo-15216133.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/15216133/pexels-photo-15216133.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt strength (barbell)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt strength (barbell)</h3>
+  <p>Photo by Uriel Venegas · Pexels #15216133</p>
+  <p class="links"><a href="https://www.pexels.com/photo/young-man-in-red-polo-exercising-with-a-barbell-in-the-gym-15216133/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/15216133/pexels-photo-15216133.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-strength-barbell.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/6455906/pexels-photo-6455906.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/6455906/pexels-photo-6455906.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt why us (coach + client)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt why us (coach + client)</h3>
+  <p>Photo by Julia Larson · Pexels #6455906</p>
+  <p class="links"><a href="https://www.pexels.com/photo/professional-trainer-instructing-black-woman-doing-exercises-with-dumbbell-6455906/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/6455906/pexels-photo-6455906.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-coach-dumbbell.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/37963576/pexels-photo-37963576.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/37963576/pexels-photo-37963576.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt why us (coach + client)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt why us (coach + client)</h3>
+  <p>Photo by bulat843 · Pexels #37963576</p>
+  <p class="links"><a href="https://www.pexels.com/photo/personal-trainer-assisting-client-in-gym-workout-37963576/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/37963576/pexels-photo-37963576.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-coach-session.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/13451904/pexels-photo-13451904.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/13451904/pexels-photo-13451904.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt about / team (two coaches)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt about / team (two coaches)</h3>
+  <p>Photo by mralpha · Pexels #13451904</p>
+  <p class="links"><a href="https://www.pexels.com/photo/woman-standing-beside-an-instructor-13451904/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/13451904/pexels-photo-13451904.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-two-coaches.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/6739935/pexels-photo-6739935.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/6739935/pexels-photo-6739935.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt trainer (female)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt trainer (female)</h3>
+  <p>Photo by Mikhail Nilov · Pexels #6739935</p>
+  <p class="links"><a href="https://www.pexels.com/photo/blonde-woman-in-active-wear-6739935/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/6739935/pexels-photo-6739935.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-trainer-woman.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/6739933/pexels-photo-6739933.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/6739933/pexels-photo-6739933.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt trainer (coach at whiteboard)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt trainer (coach at whiteboard)</h3>
+  <p>Photo by Mikhail Nilov · Pexels #6739933</p>
+  <p class="links"><a href="https://www.pexels.com/photo/woman-writing-on-a-whiteboard-6739933/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/6739933/pexels-photo-6739933.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-trainer-whiteboard.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/8436589/pexels-photo-8436589.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/8436589/pexels-photo-8436589.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt yoga (group class)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt yoga (group class)</h3>
+  <p>Photo by Yan Krukau · Pexels #8436589</p>
+  <p class="links"><a href="https://www.pexels.com/photo/people-doing-yoga-in-the-studio-8436589/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/8436589/pexels-photo-8436589.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-yoga-group.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/6339386/pexels-photo-6339386.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/6339386/pexels-photo-6339386.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt yoga (studio)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt yoga (studio)</h3>
+  <p>Photo by Pavel Danilyuk · Pexels #6339386</p>
+  <p class="links"><a href="https://www.pexels.com/photo/people-practicing-yoga-inside-the-studio-6339386/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/6339386/pexels-photo-6339386.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-yoga-studio.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/3873023/pexels-photo-3873023.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/3873023/pexels-photo-3873023.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt Zumba (group dance)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt Zumba (group dance)</h3>
+  <p>Photo by Polina Tankilevitch · Pexels #3873023</p>
+  <p class="links"><a href="https://www.pexels.com/photo/3873023/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/3873023/pexels-photo-3873023.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-zumba-group.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/7894568/pexels-photo-7894568.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/7894568/pexels-photo-7894568.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt Zumba (dance routine)" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt Zumba (dance routine)</h3>
+  <p>Photo by MART PRODUCTION · Pexels #7894568</p>
+  <p class="links"><a href="https://www.pexels.com/photo/7894568/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/7894568/pexels-photo-7894568.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-zumba-routine.jpg</code></p></figcaption>
+</figure>
+<figure class="card">
+  <a href="https://images.pexels.com/photos/6551098/pexels-photo-6551098.jpeg" target="_blank" rel="noopener"><img src="https://images.pexels.com/photos/6551098/pexels-photo-6551098.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alt personal training" loading="lazy" width="600" height="400"></a>
+  <figcaption><span class="badge">Alternate</span><h3>Alt personal training</h3>
+  <p>Photo by Andres Ayrton · Pexels #6551098</p>
+  <p class="links"><a href="https://www.pexels.com/photo/a-young-woman-training-at-the-gym-6551098/" target="_blank" rel="noopener">Pexels page</a><a href="https://images.pexels.com/photos/6551098/pexels-photo-6551098.jpeg" target="_blank" rel="noopener">Full size</a><code>alt-pt-elliptical.jpg</code></p></figcaption>
+</figure>
+</div>
+</main></body></html>

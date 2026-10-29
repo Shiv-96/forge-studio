@@ -1,0 +1,29 @@
+{
+  "_comment": "scripts/images.json — every photo used on the site (used: true) plus vetted alternates. All free under the Pexels License. Read by download-images.ps1.",
+  "images": [
+    { "used": true, "slot": "Hero background", "file": "hero.jpg", "id": 2105493, "width": 1920, "photographer": "Kuldeep Singhania", "page": "https://www.pexels.com/photo/man-holding-black-dumbbells-2105493/" },
+    { "used": true, "slot": "Why us (coaching)", "file": "why-us.jpg", "id": 7444444, "width": 1100, "photographer": "Saulo Leite", "page": "https://www.pexels.com/photo/back-view-of-a-man-7444444/" },
+    { "used": true, "slot": "Class: Strength", "file": "class-strength.jpg", "id": 5755261, "width": 900, "photographer": "Bhavesh Mahida", "page": "https://www.pexels.com/photo/man-in-blue-workout-tank-top-carrying-black-dumbbells-5755261/" },
+    { "used": true, "slot": "Class: HIIT", "file": "class-hiit.jpg", "id": 6455771, "width": 900, "photographer": "Julia Larson", "page": "https://www.pexels.com/photo/ethnic-woman-exercising-with-battling-ropes-near-male-trainer-6455771/" },
+    { "used": true, "slot": "Class: Yoga", "file": "class-yoga.jpg", "id": 3822668, "width": 900, "photographer": "Elly Fairytale", "page": "https://www.pexels.com/photo/women-doing-yoga-3822668/" },
+    { "used": true, "slot": "Class: Zumba", "file": "class-zumba.jpg", "id": 8957646, "width": 900, "photographer": "Kampus Production", "page": "https://www.pexels.com/photo/8957646/" },
+    { "used": true, "slot": "Trainer: Arjun (strength)", "file": "trainer-arjun.jpg", "id": 31918891, "width": 720, "photographer": "Foad Shariyati", "page": "https://www.pexels.com/photo/confident-man-standing-in-gym-with-crossed-arms-31918891/" },
+    { "used": true, "slot": "Trainer: Priya (yoga)", "file": "trainer-priya.jpg", "id": 4498516, "width": 720, "photographer": "Karola G", "page": "https://www.pexels.com/photo/slim-sportswoman-with-folded-yoga-mat-at-home-4498516/" },
+    { "used": true, "slot": "Trainer: Rohan (HIIT)", "file": "trainer-rohan.jpg", "id": 32695885, "width": 720, "photographer": "assomyron", "page": "https://www.pexels.com/photo/fitness-coach-in-gym-setting-showing-confidence-32695885/" },
+    { "used": true, "slot": "Trainer: Sneha (Zumba)", "file": "trainer-sneha.jpg", "id": 6739931, "width": 720, "photographer": "Mikhail Nilov", "page": "https://www.pexels.com/photo/woman-wearing-gray-hoodie-and-black-leggings-6739931/" },
+    { "used": true, "slot": "Free-trial background", "file": "trial.jpg", "id": 6339358, "width": 2000, "photographer": "Pavel Danilyuk", "page": "https://www.pexels.com/photo/group-of-people-exercising-together-6339358/" },
+
+    { "used": false, "slot": "Alt hero / strength", "file": "alt-strength-red-tank.jpg", "id": 31918834, "width": 1600, "photographer": "Foad Shariyati", "page": "https://www.pexels.com/photo/man-lifting-dumbbells-in-modern-gym-setting-31918834/" },
+    { "used": false, "slot": "Alt strength (barbell)", "file": "alt-strength-barbell.jpg", "id": 15216133, "width": 1200, "photographer": "Uriel Venegas", "page": "https://www.pexels.com/photo/young-man-in-red-polo-exercising-with-a-barbell-in-the-gym-15216133/" },
+    { "used": false, "slot": "Alt why us (coach + client)", "file": "alt-coach-dumbbell.jpg", "id": 6455906, "width": 1200, "photographer": "Julia Larson", "page": "https://www.pexels.com/photo/professional-trainer-instructing-black-woman-doing-exercises-with-dumbbell-6455906/" },
+    { "used": false, "slot": "Alt why us (coach + client)", "file": "alt-coach-session.jpg", "id": 37963576, "width": 1200, "photographer": "bulat843", "page": "https://www.pexels.com/photo/personal-trainer-assisting-client-in-gym-workout-37963576/" },
+    { "used": false, "slot": "Alt about / team (two coaches)", "file": "alt-two-coaches.jpg", "id": 13451904, "width": 1200, "photographer": "mralpha", "page": "https://www.pexels.com/photo/woman-standing-beside-an-instructor-13451904/" },
+    { "used": false, "slot": "Alt trainer (female)", "file": "alt-trainer-woman.jpg", "id": 6739935, "width": 720, "photographer": "Mikhail Nilov", "page": "https://www.pexels.com/photo/blonde-woman-in-active-wear-6739935/" },
+    { "used": false, "slot": "Alt trainer (coach at whiteboard)", "file": "alt-trainer-whiteboard.jpg", "id": 6739933, "width": 900, "photographer": "Mikhail Nilov", "page": "https://www.pexels.com/photo/woman-writing-on-a-whiteboard-6739933/" },
+    { "used": false, "slot": "Alt yoga (group class)", "file": "alt-yoga-group.jpg", "id": 8436589, "width": 1200, "photographer": "Yan Krukau", "page": "https://www.pexels.com/photo/people-doing-yoga-in-the-studio-8436589/" },
+    { "used": false, "slot": "Alt yoga (studio)", "file": "alt-yoga-studio.jpg", "id": 6339386, "width": 1200, "photographer": "Pavel Danilyuk", "page": "https://www.pexels.com/photo/people-practicing-yoga-inside-the-studio-6339386/" },
+    { "used": false, "slot": "Alt Zumba (group dance)", "file": "alt-zumba-group.jpg", "id": 3873023, "width": 1200, "photographer": "Polina Tankilevitch", "page": "https://www.pexels.com/photo/3873023/" },
+    { "used": false, "slot": "Alt Zumba (dance routine)", "file": "alt-zumba-routine.jpg", "id": 7894568, "width": 1200, "photographer": "MART PRODUCTION", "page": "https://www.pexels.com/photo/7894568/" },
+    { "used": false, "slot": "Alt personal training", "file": "alt-pt-elliptical.jpg", "id": 6551098, "width": 1200, "photographer": "Andres Ayrton", "page": "https://www.pexels.com/photo/a-young-woman-training-at-the-gym-6551098/" }
+  ]
+}

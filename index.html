@@ -1,0 +1,122 @@
+<!doctype html>
+<!--
+  index.html
+  Entry HTML for FORGE Studio. Holds SEO meta tags, social preview tags,
+  JSON-LD structured data, the hero image preload, and the hidden static
+  form that Netlify scans at deploy time to register the "free-trial" form.
+-->
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FORGE Studio | Strength, HIIT, Yoga and Zumba in Baner, Pune</title>
+    <meta
+      name="description"
+      content="FORGE Studio is a neighborhood fitness studio in Baner, Pune. Small-batch strength, HIIT, yoga and Zumba classes with certified coaches. Book a free trial class."
+    />
+    <link rel="canonical" href="https://forge-studio-pune.netlify.app/" />
+    <meta name="theme-color" content="#0E0F11" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FORGE Studio" />
+    <meta property="og:title" content="FORGE Studio | Stronger, one session at a time" />
+    <meta
+      property="og:description"
+      content="Small-batch strength, HIIT, yoga and Zumba classes in Baner, Pune. Your first class is free."
+    />
+    <meta property="og:url" content="https://forge-studio-pune.netlify.app/" />
+    <meta property="og:image" content="https://forge-studio-pune.netlify.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="FORGE Studio logo with the tagline Stronger, one session at a time" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FORGE Studio | Stronger, one session at a time" />
+    <meta
+      name="twitter:description"
+      content="Small-batch strength, HIIT, yoga and Zumba classes in Baner, Pune. Your first class is free."
+    />
+    <meta name="twitter:image" content="https://forge-studio-pune.netlify.app/og-image.jpg" />
+
+    <!-- Hero image: connect early and preload (it is the Largest Contentful Paint element).
+         The srcset/sizes here must match the <img> in src/components/Hero.jsx. -->
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      fetchpriority="high"
+      imagesrcset="https://images.pexels.com/photos/2105493/pexels-photo-2105493.jpeg?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/2105493/pexels-photo-2105493.jpeg?auto=compress&cs=tinysrgb&w=960 960w, https://images.pexels.com/photos/2105493/pexels-photo-2105493.jpeg?auto=compress&cs=tinysrgb&w=1280 1280w, https://images.pexels.com/photos/2105493/pexels-photo-2105493.jpeg?auto=compress&cs=tinysrgb&w=1920 1920w"
+      imagesizes="100vw"
+    />
+
+    <!-- Structured data: LocalBusiness → HealthClub -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HealthClub",
+        "name": "FORGE Studio",
+        "description": "Neighborhood fitness studio offering strength training, HIIT, yoga and Zumba classes with personal training and beginner-friendly programs.",
+        "url": "https://forge-studio-pune.netlify.app/",
+        "logo": "https://forge-studio-pune.netlify.app/apple-touch-icon.png",
+        "image": "https://forge-studio-pune.netlify.app/og-image.jpg",
+        "telephone": "+91-20-4000-1234",
+        "email": "hello@forgestudio.example",
+        "priceRange": "₹₹",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2nd Floor, Sai Plaza, Baner Road",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411045",
+          "addressCountry": "IN"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 18.559, "longitude": 73.7868 },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "06:00",
+            "closes": "22:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "07:00",
+            "closes": "12:00"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-ink-950 text-ink-100">
+    <div id="root"></div>
+
+    <!--
+      Netlify Forms detection form.
+      Netlify parses the deployed HTML for forms with the "netlify" attribute.
+      React renders the visible form at runtime, so this hidden copy tells Netlify
+      the form name and every field name. Keep the field names identical to
+      src/components/TrialForm.jsx, or submissions will be dropped.
+    -->
+    <form name="free-trial" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <input type="text" name="preferredClass" />
+      <input type="text" name="preferredTime" />
+      <input type="checkbox" name="consent" />
+      <input type="text" name="bot-field" />
+    </form>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

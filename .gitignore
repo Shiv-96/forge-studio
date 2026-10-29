@@ -1,0 +1,11 @@
+# .gitignore — keep dependencies, builds and local files out of Git
+node_modules/
+dist/
+.netlify/
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json

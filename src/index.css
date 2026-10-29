@@ -1,0 +1,219 @@
+/*
+ * src/index.css
+ * Global styles for FORGE Studio ("Volt" design direction).
+ * Tailwind CSS v4 is configured here with @theme instead of tailwind.config.js:
+ * every token below becomes a utility, e.g. --color-volt → bg-volt, text-volt.
+ */
+
+@import 'tailwindcss';
+
+/* Self-hosted fonts (bundled by Vite from node_modules, no Google Fonts request). */
+@import '@fontsource/anton/latin-400.css';
+@import '@fontsource-variable/inter/wght.css';
+
+@theme {
+  /* Neutral "ink" scale for the dark theme. */
+  --color-ink-950: #0e0f11; /* page background */
+  --color-ink-900: #16181b; /* cards */
+  --color-ink-800: #1f2226; /* raised surfaces, inputs */
+  --color-ink-700: #33373d; /* borders */
+  --color-ink-500: #5c616a; /* decorative only (fails AA for text) */
+  --color-ink-400: #a0a5ad; /* secondary text: 7.4:1 on ink-950 */
+  --color-ink-100: #eceef0; /* primary text */
+
+  /* The single accent colour. Text on it must be dark (ink-950). */
+  --color-volt: #c6f432;
+  --color-volt-hover: #d7ff5c;
+
+  /* Error text that passes AA on the dark background. */
+  --color-danger: #ff8a7a;
+
+  --font-display: 'Anton', 'Impact', 'Arial Narrow', sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Anchor jumps land below the sticky navbar instead of under it. */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-ink-950 font-sans text-ink-100 antialiased;
+  }
+
+  ::selection {
+    @apply bg-volt text-ink-950;
+  }
+
+  /* One visible, consistent focus style for every interactive element. */
+  :focus-visible {
+    outline: 2px solid var(--color-volt);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Display headings: tall condensed caps. */
+  .heading-display {
+    @apply font-display uppercase leading-[0.95] tracking-wide;
+  }
+
+  /* Small label above section titles, with the slanted brand block. */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-volt;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 1rem;
+    height: 0.6rem;
+    background: var(--color-volt);
+    transform: skewX(-20deg);
+  }
+
+  /*
+   * Buttons with slanted ends. The slant lives on a ::before layer (not clip-path)
+   * so the element itself stays rectangular and its focus outline is never clipped.
+   */
+  .btn {
+    @apply relative isolate inline-flex min-h-12 items-center justify-center gap-2 px-7 py-3 text-sm font-semibold uppercase tracking-wider transition-colors duration-200;
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transform: skewX(-12deg);
+    transition:
+      background-color 200ms,
+      border-color 200ms;
+  }
+  .btn-primary {
+    @apply text-ink-950;
+  }
+  .btn-primary::before {
+    background: var(--color-volt);
+  }
+  .btn-primary:hover::before {
+    background: var(--color-volt-hover);
+  }
+  .btn-ghost {
+    @apply text-ink-100;
+  }
+  .btn-ghost::before {
+    border: 1px solid var(--color-ink-700);
+  }
+  .btn-ghost:hover {
+    @apply text-volt;
+  }
+  .btn-ghost:hover::before {
+    border-color: var(--color-volt);
+  }
+  .btn:disabled {
+    @apply cursor-not-allowed opacity-70;
+  }
+
+  /* Card surface with an angled top-right corner, shared by most sections. */
+  .card {
+    @apply relative border border-ink-700 bg-ink-900;
+    clip-path: polygon(0 0, calc(100% - 1.25rem) 0, 100% 1.25rem, 100% 100%, 0 100%);
+  }
+
+  /* Small pill-like tag with slanted ends. */
+  .tag {
+    @apply relative isolate inline-flex items-center px-2.5 py-0.5 text-xs font-medium whitespace-nowrap;
+  }
+  .tag::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transform: skewX(-12deg);
+    background: var(--color-ink-800);
+  }
+  .tag-volt {
+    @apply text-ink-950;
+  }
+  .tag-volt::before {
+    background: var(--color-volt);
+  }
+
+  /* Toggle buttons used by the timetable filters and the billing switch. */
+  .chip {
+    @apply min-h-11 shrink-0 border border-ink-700 px-3.5 text-sm sm:px-4 font-medium text-ink-400 transition-colors hover:border-ink-500 hover:text-ink-100;
+  }
+  .chip[aria-pressed='true'],
+  .chip[aria-checked='true'] {
+    @apply border-volt bg-volt text-ink-950;
+  }
+
+  /* Form fields. */
+  .field {
+    @apply block w-full border border-ink-700 bg-ink-800 px-4 py-3 text-base text-ink-100 placeholder:text-ink-400 transition-colors;
+  }
+  .field:hover {
+    @apply border-ink-500;
+  }
+  .field:focus-visible {
+    outline-offset: 0;
+    @apply border-volt;
+  }
+  .field[aria-invalid='true'] {
+    @apply border-danger;
+  }
+
+  /* Image frame: striped placeholder behind every photo (and the fallback if one fails). */
+  .photo-frame {
+    @apply relative overflow-hidden bg-ink-900;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent 0 14px,
+      color-mix(in srgb, var(--color-ink-700) 45%, transparent) 14px 15px
+    );
+  }
+
+  /* Visually hidden but available to screen readers. */
+  .sr-only-focusable:not(:focus) {
+    @apply sr-only;
+  }
+}
+
+/* Marquee band: move one full row width (half the track) for a seamless loop. */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*
+ * Scroll reveal. Content is visible by default; only when the user has not asked
+ * for reduced motion do we hide it until it enters the viewport.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 700ms cubic-bezier(0.2, 0.7, 0.2, 1),
+      transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .reveal[data-visible='true'] {
+    opacity: 1;
+    transform: none;
+  }
+}

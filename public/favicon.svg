@@ -1,0 +1,6 @@
+<!-- favicon.svg — FORGE monogram: lime slanted block with a dark "F". -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0E0F11"/>
+  <path d="M18 10h38l-10 44H8z" fill="#C6F432"/>
+  <path d="M25 19h20l-1.4 6H31.3l-1.2 5.2h11.2l-1.4 6H28.7L26.4 46h-7.1z" fill="#0E0F11"/>
+</svg>
